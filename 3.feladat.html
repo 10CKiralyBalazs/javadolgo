@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.feladat</title>
+</head>
+<body>  
+    <script>
+        function gradeCalculator(score) {
+         let maximum;
+ 
+     if (score >= 90) {
+         maximum = 'A';
+     } else if (score >= 80) {
+         maximum = 'B';
+     } else if (score >= 70) {
+         maximum = 'C';
+     } else if (score >= 60) {
+         maximum = 'D';
+     } else if (score >= 50) {
+         maximum = 'E';
+     } else {
+         maximum = 'F';
+     }
+ 
+     return maximum;
+ }
+ 
+ 
+ let score = 85; 
+ document.write(`${score} is ${gradeCalculator(score)}`); 
+     </script>
+
+
+</body>
+</html>
